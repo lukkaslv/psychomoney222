@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "env": {
+    "MONGODB_URI": "@mongodb-uri",
+    "ADMIN_PASSWORD": "@admin-password"
+  }
+}
